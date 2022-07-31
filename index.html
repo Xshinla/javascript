@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="js.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <!-- phòng khách -->
+        <div class="phong_khach">
+            <div class="phong_khach-title">
+                <h1>ROOM_01</h1>
+            </div>
+            <h2>Nhiệt độ: <span class="pk_temp">00</span></h2>
+            <h2>Độ ẩm: <span class="pk_hum">00</span></h2>
+            <div class="phong-item">
+                <div class="led led-1">
+                    <h3 class="title">Led 1</h3>
+                    <img id="denId_01" width="10" height="50" class="card-img-top" src="./img/light_bulb_off.png" alt="Card image" style="width:80%">
+
+                    <button class="pk__led-1-off" >OFF</button>
+                    <button class="pk__led-1-on" src="./img/light_bulb_off.png" alt="Card image" style="width:30%">ON</button>
+                </div>
+                <div class="led led-2">
+                    <h3 class="title">Led 2</h3>
+                    <img id="denId_02" width="10" height="50" class="card-img-top" src="./img/light_bulb_off.png" alt="Card image" style="width:80%">
+                    <button class="pk__led-2-off">OFF</button>
+                    <button class="pk__led-2-on">ON</button>
+                </div>
+                <div class="led led-3">
+                    <h3 class="title">Led 3</h3>
+                    <img id="denId_03" width="10" height="50" class="card-img-top" src="./img/light_bulb_off.png" alt="Card image" style="width:80%">
+                    <button class="pk__led-3-off">OFF</button>
+                    <button class="pk__led-3-on">ON</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phòng ngủ -->
+        <div class="phong_ngu">
+            <div class="phong_ngu-title">
+                <h1>ROOM_02</h1>
+            </div>
+            <h2>Nhiệt độ: <span class="pn_temp">00</span></h2>
+            <h2>Độ ẩm: <span class="pn_hum">00</span></h2>
+            <div class="phong-item">
+                <div class="led led-1">
+                    <h3 class="title">Led 1</h3>
+                    <img id="denId_01" width="10" height="50" class="card-img-top" src="./img/light_bulb.png" alt="Card image" style="width:80%">
+                    <button class="pn__led-1-off">OFF</button>
+                    <button class="pn__led-1-on">ON</button>
+                </div>
+                <div class="led led-2">
+                    <h3 class="title">Led 2</h3>
+                    <img id="denId_02" width="10" height="50" class="card-img-top" src="./img/light_bulb.png" alt="Card image" style="width:80%">
+                    <button class="pn__led-2-off">OFF</button>
+                    <button class="pn__led-2-on">ON</button>
+                </div>
+                <div class="led led-3">
+                    <h3 class="title">Led 3</h3>
+                    <img id="denId_03" width="10" height="50" class="card-img-top" src="./img/light_bulb.png" alt="Card image" style="width:80%">
+                    <button class="pn__led-3-off">OFF</button>
+                    <button class="pn__led-3-on">ON</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
